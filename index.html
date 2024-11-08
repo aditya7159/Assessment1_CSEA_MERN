@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="resume-builder">
+        <h1 style="text-align: center; color: rgb(99, 99, 234);" >Resume Builder</h1>
+        <form id="resume-form">
+            
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter your Name" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Enter your email" id="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" placeholder="Enter your phone number" id="phone" required>
+
+            <label for="LinkedInid">LinkedIn id :</label>
+            <input type="text" placeholder="Enter your LinkedIn" id="LinkedInid">
+
+            <label for="gitid">Github id:</label>
+            <input type="text" placeholder="Enter your Github Id" id="gitid">
+
+           
+            <div id="experience-section">
+                <label for="experience">Experience:</label>
+                <input type="text" class="experience" placeholder="Enter your Experience">
+            </div>
+            
+
+           
+            <div id="education-section">
+                <label for="education">Education:</label>
+                <input type="text" class="education" placeholder="Enter your Education details">
+            </div>
+            
+            <div id="photo">
+            <label for="profilephoto">Upload Photo</label>
+            <input type="file" id="profilephoto" accept="image/*" onchange="previewImage(event)">
+        </div>
+
+            <button type="button" onclick="generateResume()">Generate Resume</button>
+        </form>
+
+       <!-- <div id="resume-preview">
+           
+            <div id="resume-content"></div>
+            <button onclick="downloadResume()">Download Resume</button>
+        </div>-->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
